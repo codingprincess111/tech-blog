@@ -1,8 +1,7 @@
-// Import necessary modules
 const router = require("express").Router();
 const { User } = require("../../models");
 
-// Route to get all users
+
 router.get("/", (req, res) => {
   User.findAll({
     attributes: { exclude: ["password"] },
@@ -13,7 +12,7 @@ router.get("/", (req, res) => {
       res.status(500).json(err);
     });
 });
-// Route to sign up a new user
+
 router.post("/signup", async (req, res) => {
   try {
     const newUser = new User();
@@ -34,7 +33,7 @@ router.post("/signup", async (req, res) => {
     console.log(err);
   }
 });
-// Route to log in a user
+
 router.post("/login", async (req, res) => {
   try {
     const userData = await User.findOne({ where: { username: req.body.username } });
@@ -67,7 +66,7 @@ router.post("/login", async (req, res) => {
     res.status(400).json(err);
   }
 });
-// Route to log out a user
+
 router.post("/logout", (req, res) => {
   if (req.session.logged_in) {
     req.session.destroy(() => {
@@ -77,5 +76,5 @@ router.post("/logout", (req, res) => {
     res.status(404).end();
   }
 });
-// Export the router
+
 module.exports = router;

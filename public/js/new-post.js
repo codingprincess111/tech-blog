@@ -1,4 +1,3 @@
-// Create new post public/js/new-post.js
 const newTechPostFormHandler = async (event) => {
     event.preventDefault();
   

@@ -23,7 +23,6 @@ const newTechCommentFormHandler = async (event) => {
   };
   
   
-  
   // Event listeners
   const newTechCommentForm = document.querySelector('.new-tech-comment-form');
   if (newTechCommentForm) {

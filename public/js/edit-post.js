@@ -9,7 +9,7 @@ const post_id = window.location.toString().split("/")[
   
     const title = document.querySelector("#title-update-tech-post").value.trim();
     const content = document
-      .querySelector("#content-tech-tech-post")
+      .querySelector("#content-update-tech-post")
       .value.trim();
   
     if (title && content) {
@@ -49,7 +49,7 @@ const post_id = window.location.toString().split("/")[
     updateTechPostButton.addEventListener("click", updateTechPostFormHandler);
   }
   
-  const deleteTechPostButton = document.querySelector("#delete-Tech-post");
+  const deleteTechPostButton = document.querySelector("#delete-tech-post");
   
   if (deleteTechPostButton) {
     deleteTechPostButton.addEventListener("click", deleteTechPostFormHandler);

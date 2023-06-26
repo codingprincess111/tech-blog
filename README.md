@@ -30,4 +30,8 @@ GitHub repository: https://github.com/codingprincess111/tech-blog
 
 ## Screenshots
 
-[Screenshot](./public/img/tech-blog.png)
+[homepage](./public/img/tech-blog.png) As a user, when logged in this is what the homepge looks like
+[edit](./public/img/edit-post.png) When user creates a post, user can edit the title and content 
+[dashboard](./public/img/dashboard-post-create.png)When user is logged in, click dashboard to see posts created
+[delete](./public/img/deleted-post.png)User is still logged in, homepage reflects deleted post
+[comment](./public/img/comment-made.png)User has access to make comments on other users posts, comment is reflected at bottom as username hello_kitty123
